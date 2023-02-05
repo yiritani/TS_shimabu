@@ -8,7 +8,7 @@ function tadanoalert(){
 }
 
 interface Props {
-    page: string
+    page: string,
 }
 
 export function Main(props: Props) {

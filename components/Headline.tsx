@@ -1,5 +1,5 @@
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from './Headline.module.css'
 import Image from "next/image";
 
 interface Props {

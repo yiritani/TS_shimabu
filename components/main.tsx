@@ -11,12 +11,11 @@ interface Props {
     page: string
 }
 
-export default function Main(props: Props) {
+export function Main(props: Props) {
     return (
         <>
 
             <main className={styles.main}>
-
                 <Headline
                     title={props.page}
                     arrayObject={[

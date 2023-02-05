@@ -4,17 +4,25 @@ import Image from "next/image";
 
 interface Props {
     title: string,
-    page: string
+    arrayObject: Array<{ id: number, name: string }>,
+    idList: number[],
+    peopleObject: {
+        id: number,
+        name: string
+    }
+    sex: boolean,
+    comp: JSX.Element,
+    function: () => void
 }
 
-export default function Headline(props: Props) {
-    console.log(props.title)
+export function Headline(props: Props) {
+    console.log(props)
     return (
         <>
             <div className={styles.description}>
                 <p>
                     {props.title} editing&nbsp;
-                    <code className={styles.code}>src/pages/index.tsx</code>
+                    {props.comp}
                 </p>
                 <div>
                     <a
@@ -33,6 +41,7 @@ export default function Headline(props: Props) {
                         />
                     </a>
                 </div>
+                <button onClick={props.function}>Click Me</button>
             </div>
 
             <div className={styles.center}>

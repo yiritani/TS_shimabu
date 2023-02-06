@@ -1,6 +1,6 @@
 import styles from '@/styles/Home.module.css'
-import Links from 'components/Links'
-import {Headline} from 'components/Headline'
+import Links from '@/components/Links'
+import {Headline} from '@/components/Headline'
 
 
 function tadanoalert(){

@@ -14,7 +14,6 @@ interface Props {
 export function Main(props: Props) {
     return (
         <>
-
             <main className={styles.main}>
                 <Headline
                     title={props.page}
